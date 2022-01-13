@@ -10,6 +10,22 @@ AddEventHandler('qb-headbag:puton', function()
   TriggerServerEvent("qb-handbag:MaskPlayer", target)
 end)
 
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(1)
+        if HaveBagOnHead then
+        	DisableControlAction(0, 246, true) 
+        	DisableControlAction(0, 245, true)
+		DisableControlAction(0, 37, true)
+        	DisableControlAction(0, 24, true)
+		DisableControlAction(0, 25, true)
+
+
+        end
+    end
+end)
+
+
 RegisterNetEvent('qb-handbag:GetMasked', function(playerId)
 	
 	
