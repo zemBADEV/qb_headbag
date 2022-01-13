@@ -1,22 +1,13 @@
+fx_version 'cerulean'
 
 games { 'gta5' }
 
-
-
 author 'Montana#8065'
 
+client_script 'client.lua'
 
-
-client_scripts {
-	'client.lua'
-}
-
-server_scripts {
-    'server.lua'
-}
+server_script 'server.lua'
 
 ui_page('index.html') --HEAD BAG IMAGE
 
-files {
-    'index.html'
-}
+file 'index.html'
