@@ -2,7 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 local HaveBagOnHead = false
 
-RegisterNetEvent('qb-headbag:puton') --This event open menu
+RegisterNetEvent('qb-headbag:puton') 
 AddEventHandler('qb-headbag:puton', function()
   local closestplayer = GetClosestPlayer(2)
   local target = GetPlayerServerId(closestplayer)
