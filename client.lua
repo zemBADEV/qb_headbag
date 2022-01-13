@@ -16,12 +16,9 @@ Citizen.CreateThread(function()
         if HaveBagOnHead then
         	DisableControlAction(0, 246, true) 
         	DisableControlAction(0, 245, true)
-		DisableControlAction(0, 37, true)
-        	DisableControlAction(0, 24, true)
+		DisableControlAction(0, 24, true)
 		DisableControlAction(0, 25, true)
-
-
-        end
+	end
     end
 end)
 
